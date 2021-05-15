@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App";
-import 'animate.css';
 import {PORTAL_AUTH} from "./api/uvw";
 import {BASE_URL} from "./api/ApiUrls";
 import {wings} from "./lib/wings";
