@@ -15,5 +15,8 @@ export const REFS = {
 
 export const LINKS = {
     DASHBOARD: '/dashboard',
-    HOME: '/'
+    HOME: '/home',
+    WELCOME: '/',
+    LOGIN: '/login',
+    SIGN_UP: '/sign_up'
 }

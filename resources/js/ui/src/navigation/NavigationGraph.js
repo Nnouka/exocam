@@ -5,6 +5,9 @@ import Dashboard from "../views/Dashboard";
 import {connect} from "react-redux";
 import {mapPrivilegeToUrl} from "../utils/mapPrivilegeToUrl";
 import {HashRouter, Switch, Route} from 'react-router-dom';
+import Home from '../views/Home';
+import Welcome from '../views/Welcome';
+import PublicLayout from '../layouts/public/PublicLayout';
 function NavigationGraph(props) {
     /* const {page, privileges} = props;
     const renderComponent = () => {
@@ -44,7 +47,12 @@ function NavigationGraph(props) {
                     <Dashboard />
                 </Route>
                 <Route exact path={LINKS.HOME}>
-                    
+                    <Home />
+                </Route>
+                <Route exact paht={LINKS.WELCOME}>
+                    <PublicLayout>
+                        <Welcome />
+                    </PublicLayout>
                 </Route>
             </Switch>
         </HashRouter>
