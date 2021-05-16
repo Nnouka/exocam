@@ -18,7 +18,21 @@
 .code-gist {
     color: #555;
 }
-
+.action-banner {
+    text-align: center;
+    width: 100%;
+    min-height: 150px;
+    background-color: #099;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.action-banner a {
+    color: #fff;
+}
+.action-banner a:hover {
+    color: #fff;
+}
 @media (max-width: 600px) {
     .banner {
         flex-direction: column;

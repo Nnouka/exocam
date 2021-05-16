@@ -3,6 +3,7 @@ import { appName } from '../constants';
 import Banner from './_parts/banner/Banner';
 import WorkStep from './_parts/work-step/WorkStep';
 import {getServerHome} from '../persistence';
+import ActionBanner from './_parts/banner/ActionBanner';
 function Welcome(props) {
     const sizes = {width: 200, height: 180}
     const steps = [{
@@ -46,6 +47,7 @@ function Welcome(props) {
                     )
                 }
             </div>
+            <ActionBanner />
         </div>
     );
 }
