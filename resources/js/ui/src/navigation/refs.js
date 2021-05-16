@@ -21,5 +21,7 @@ export const LINKS = {
     HOME: '/home',
     WELCOME: '/',
     LOGIN: '/login',
-    SIGN_UP: '/sign_up'
+    SIGN_UP: '/sign_up',
+    DONATE: '/donate',
+    EXPLORE_LANGUAGES: '/explore/languages'
 }

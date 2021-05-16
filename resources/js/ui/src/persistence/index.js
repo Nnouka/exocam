@@ -28,6 +28,9 @@ export const getLaravelSessionValue = () => localStorage.getItem(PersistenceKey.
 export const getXSRFToken = () => localStorage.getItem(PersistenceKey.XSRF_TOKEN);
 export const getServerHome = () => {
     const home = localStorage.getItem(PersistenceKey.SERVER_HOME);
+    if(home == null) {
+        alert("We are having difficulty connecting to the server. Please refresh your page to fix this!");
+    }
     return home;
 }
 export const logout = (callback) => {

@@ -15,6 +15,9 @@
         <div id="root">
             @yield('content')
         </div>
+        <script type="text/javascript">
+            localStorage.setItem(btoa("BASE_URI"), "{{rtrim(asset(""), '/')}}");
+        </script>
         <script src="{{asset('js/app.js')}}" type="text/javascript"></script>
     </body>
 </html>

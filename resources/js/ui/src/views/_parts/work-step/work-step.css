@@ -1,0 +1,10 @@
+.work-step {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.work-step div {
+    margin: 10px;
+}

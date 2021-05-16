@@ -1,21 +1,33 @@
 import React from 'react';
 import './app-bar.css';
-import logo from '../../static/images/logo.svg';
 import {Link} from 'react-router-dom';
-import {LINKS} from '../../navigation/refs';
-function AppBar(props) {
+function AppBar({renderIcon, links = [], ...props}) {
     return (
-        <div>
-            <ul>
-                <li>
-                    <img src={logo}/>
-                </li>
-            </ul>
-            <ul>
-                <li><Link to={LINKS.LOGIN}>Login</Link></li>
-                <li><Link to={LINKS.SIGN_UP}>Sign Up</Link></li>
-            </ul>
-        </div>
+        <nav  className="app-bar-nav">
+            <div className="nav-container">
+                {
+                    renderIcon && 
+                    <ul>
+                        <li>
+                            {renderIcon()}
+                        </li>
+                        <li style={{color: '#fff'}}>
+                            Exocam
+                        </li>
+                    </ul>
+                }
+                {
+                    links.length > 0 &&
+                    <ul>
+                        {
+                            links.map(
+                                (l, index) => (<li key={'link' + index}>  {`${index > 0 ? '|':''}`} <Link to={l.to}>{l.name}</Link></li>)
+                            )
+                        }
+                    </ul>
+                }
+            </div>
+        </nav>
     );
 }
 

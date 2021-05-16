@@ -1,0 +1,17 @@
+.banner {
+    display: flex;
+    min-height: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.banner div {
+    margin: 5px;
+    width: 512px;
+}
+.banner .banner-title {
+    color: #099;
+    letter-spacing: 5px;
+}
+.code-gist {
+    color: #555;
+}
