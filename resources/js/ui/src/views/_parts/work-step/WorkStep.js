@@ -1,9 +1,18 @@
 import React from 'react';
+import { appName } from '../../../constants';
 import './work-step.css';
-function WorkStep({order = 0, ...props}) {
+
+function WorkStep({order = 0, title = "", renderIcon, text, ...props}) {
     return (
     <div className="work-step">
-        <div></div> <div>{order}. Work step</div>
+        <div>
+            {renderIcon && renderIcon()}
+        </div> 
+        <div><h4>{order}. {title}</h4>
+            <p>
+                {text}
+            </p>
+        </div>
     </div>);
 }
 

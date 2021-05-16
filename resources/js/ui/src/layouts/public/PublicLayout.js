@@ -3,6 +3,8 @@ import AppBar from '../../components/appbar/AppBar';
 import './public-layout.css';
 import {LINKS} from '../../navigation/refs';
 import {getServerHome} from '../../persistence';
+import FooterBanner from '../../views/_parts/footer-banner';
+import { appName } from '../../constants';
 function PublicLayout(props) {
     return (
         <>
@@ -16,6 +18,33 @@ function PublicLayout(props) {
             <main className="public-layout-container">
                 {props.children}
             </main>
+            <footer className="public-layout-footer">
+                <FooterBanner rows={[
+                    {cells: [
+                        {title: 'platform', links: [
+                            {to: '/', name: 'How it works'},
+                            {to: '/', name: 'The team'},
+                            {to: '/', name: 'Security'},
+                            {to: '/', name: 'Integration'},
+                            ]},
+                            {title: "Get Involved", links: [
+                                {to: '/donnate', name: 'Donnate money'},
+                                {to: '/mentor/register', name: 'Become a mentor'},
+                                {to: 'https://github.com/Nnouka/exocam', name: 'Become a maintainer'},
+                            ]},
+                        {title: 'About', links: [
+                                {to: '/', name: `About ${appName}`},
+                                {to: '/', name: 'About Mungwin'},
+                                {to: '/', name: 'The Mungwin Way'},
+                                {to: '/', name: 'Partners'},
+                            ]},
+                            {title: "Get help", links: [
+                                    {to: '/', name: 'FAQs'},
+                                    {to: '/', name: 'Jobs'},
+                                ]}
+                        ]}
+                ]} />
+            </footer>
         </>
     );
 }

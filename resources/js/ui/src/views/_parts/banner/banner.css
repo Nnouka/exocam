@@ -4,9 +4,12 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.banner .banner-img {
+    width: 380px;
+}
 .banner div {
     margin: 5px;
-    width: 512px;
+    max-width: 512px;
 }
 .banner .banner-title {
     color: #099;
@@ -14,4 +17,14 @@
 }
 .code-gist {
     color: #555;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner .banner-img {
+        width: 200px;
+    }
 }

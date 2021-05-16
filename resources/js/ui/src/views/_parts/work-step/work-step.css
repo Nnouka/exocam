@@ -7,4 +7,13 @@
 }
 .work-step div {
     margin: 10px;
+    text-align: left;
+}
+
+@media (max-width: 1100px) {
+    .work-step {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 85%;
+    }
 }

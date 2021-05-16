@@ -17,6 +17,11 @@
 .nav-container ul:last-child {
     justify-content: flex-end;
 }
+@media (max-width: 600px) {
+    .nav-container ul:last-child {
+        display: none;
+    }
+}
 .nav-container ul li {
     padding: 0 5px;
 }

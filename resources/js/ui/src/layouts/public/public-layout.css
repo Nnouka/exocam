@@ -2,3 +2,14 @@
     width: 60%;
     margin: 0 auto;
 }
+.public-layout-footer {
+    margin: -15px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .public-layout-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,17 @@
+.footer-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .footer-row {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+}

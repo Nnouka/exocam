@@ -1,0 +1,40 @@
+.footer-cell-title {
+    text-transform: capitalize;
+    margin: 0;
+}
+.footer-cell-no-title {
+    margin: 0.6rem;
+}
+.footer-cell {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px;
+}
+.footer-cell-inner {
+    display: block;
+    border-top-width: 1px;
+    border-top-color: #aaa;
+    border-top-style: solid;
+
+}
+.footer-cell-line {
+    background-color: #fff;
+    width: 100%;
+}
+.footer-cell-inner ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.footer-cell-inner ul li a {
+    text-decoration: none;
+    color: #aaa;
+}
+.footer-cell-inner ul li a:hover {
+    text-decoration: underline;
+}
