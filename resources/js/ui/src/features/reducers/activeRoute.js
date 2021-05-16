@@ -1,7 +1,7 @@
 import {POP_ACTIVE_ROUTE, SET_ACTIVE_ROUTE} from "../actions/activeRoute";
 import {REFS} from "../../navigation/refs";
 
-export default function activeRoute(state = [{name: REFS.DASHBOARD}], action) {
+export default function activeRoute(state = [{name: REFS.WELCOME}], action) {
     switch (action.type) {
         case SET_ACTIVE_ROUTE :
             if (typeof action.route === "string"){

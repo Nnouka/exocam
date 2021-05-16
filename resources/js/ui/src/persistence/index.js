@@ -28,9 +28,6 @@ export const getLaravelSessionValue = () => localStorage.getItem(PersistenceKey.
 export const getXSRFToken = () => localStorage.getItem(PersistenceKey.XSRF_TOKEN);
 export const getServerHome = () => {
     const home = localStorage.getItem(PersistenceKey.SERVER_HOME);
-    if (home == null) {
-        document.location = document.location;
-    }
     return home;
 }
 export const logout = (callback) => {
